@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		app:cardElevation="4dp"
+		app:cardCornerRadius="4dp">
+	
+	<android.support.constraint.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/albums_row_container">
+		
+		<ImageView
+				android:id="@+id/albums_row_cover"
+				android:layout_height="100dp"
+				android:layout_width="100dp"
+				android:layout_margin="0dp"
+				android:layout_marginStart="36dp"
+				android:layout_marginLeft="36dp"
+				android:contentDescription="@string/albums_list_item_cover"
+				android:transitionName="@string/transition_name"
+				app:srcCompat="@drawable/ic_library_music_pink_72dp"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintBottom_toBottomOf="parent"
+				tools:ignore="UnusedAttribute" />
+		<TextView
+				android:id="@+id/albums_row_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginStart="8dp"
+				android:layout_marginLeft="8dp"
+				android:textSize="18sp"
+				android:textColor="@color/colorBlack"
+				android:ellipsize="end"
+				android:singleLine="false"
+				android:maxLines="2"
+				app:fontFamily="sans-serif"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/albums_row_cover" android:maxEms="8" />
+		<TextView
+				android:id="@+id/albums_row_author"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginLeft="8dp"
+				android:textSize="14sp"
+				android:textColor="@color/colorGrey800"
+				android:maxEms="7"
+				android:singleLine="true"
+				app:fontFamily="sans-serif"
+				app:layout_constraintStart_toEndOf="@+id/albums_row_cover"
+				app:layout_constraintTop_toBottomOf="@+id/albums_row_title" />
+		<TextView
+				android:id="@+id/center_dot"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingStart="4dp"
+				android:paddingEnd="4dp"
+				android:paddingLeft="4dp"
+				android:paddingRight="4dp"
+				android:text="@string/center_dot"
+				android:textSize="14sp"
+				android:textColor="@color/colorGrey800"
+				android:gravity="center"
+				app:fontFamily="sans-serif"
+				app:layout_constraintStart_toEndOf="@+id/albums_row_author"
+				app:layout_constraintTop_toBottomOf="@+id/albums_row_title" />
+		<TextView
+				android:id="@+id/albums_row_year"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:textColor="@color/colorGrey800"
+				app:fontFamily="sans-serif"
+				app:layout_constraintStart_toEndOf="@+id/center_dot"
+				app:layout_constraintTop_toBottomOf="@+id/albums_row_title" />
+		<TextView
+				android:id="@+id/albums_row_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorPink"
+				android:layout_marginBottom="8dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginStart="8dp"
+				app:fontFamily="sans-serif"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/albums_row_cover" />
+		<TextView
+				android:id="@+id/albums_row_tracks_count"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:textColor="@color/colorBlack"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="8dp"
+				android:layout_marginRight="8dp"
+				app:fontFamily="sans-serif"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+	</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,43 @@
+<resources>
+	<!-- Service information -->
+	<string name="app_name" translatable="false">AlbumsLib</string>
+	<string name="toolbar_title">Your Music Library</string>
+	
+	<!-- Start messages to user -->
+	<string name="menu_search_album">Search Album</string>
+	<string name="search_hint">What album you are looking for?</string>
+	<string name="start_search">Search on iTunes for any album you can imagine!</string>
+	<string name="see_on_site">See on iTunes</string>
+	
+	<!-- Search button states -->
+	<string name="lets_start">Okay, let\'s search</string>
+	<string name="try_again">Try again</string>
+	
+	<!-- Some specific symbols -->
+	<string name="ruble_symbol" translatable="false">₽</string>
+	<string name="center_dot" translatable="false">•</string>
+	
+	<!-- Errors -->
+	<string name="unexpected_error">Unexpected error. Please, try again later.</string>
+	<string name="search_query_empty">Please, enter not empty album title</string>
+	<string name="nothing_found">Oh, looks like nothing found on your request! Try again with more accurate
+		query.</string>
+	<string name="no_available_internet_connection">Please, check your internet connection.</string>
+	
+	<!-- For xml files -->
+	<string name="not_started_icon" translatable="false">icon for not started placeholder</string>
+	<string name="albums_list_item_cover" translatable="false">albums list item cover</string>
+	<string name="album_cover_expanded" translatable="false">Album cover expanded</string>
+	<string name="transition_name" translatable="false">simple_activity_transition</string>
+	
+	<!-- Others -->
+	<string name="list_of_tracks">List of Tracks</string>
+	
+	<!-- Templates -->
+	<string name="album_detailed_artist">Artist: %1$s</string>
+	<string name="album_detailed_year">Year: %1$d</string>
+	<string name="album_detailed_price">Price: %1$d %2$s</string>
+	<string name="album_detailed_genre">Genre: %1$s</string>
+	<string name="album_detailed_tracks_count">Tracks count: %1$d</string>
+	<string name="albums_adapter_tracks_count">%1$d tracks</string>
+</resources>

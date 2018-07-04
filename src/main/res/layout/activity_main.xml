@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	
+	<android.support.design.widget.AppBarLayout
+			android:id="@+id/appBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+		<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?android:actionBarSize"
+				android:background="@color/colorWhite"
+				app:layout_scrollFlags="scroll|enterAlways|snap"
+				app:title="@string/toolbar_title" />
+	</android.support.design.widget.AppBarLayout>
+	
+	<android.support.constraint.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="bottom|center"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		
+		<android.support.v7.widget.RecyclerView
+				android:id="@+id/albums_list"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				android:visibility="gone">
+		
+		</android.support.v7.widget.RecyclerView>
+		
+		<LinearLayout
+				android:id="@+id/placeholder"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginStart="48dp"
+				android:layout_marginEnd="48dp"
+				android:layout_marginLeft="48dp"
+				android:layout_marginRight="48dp"
+				android:visibility="visible"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				android:padding="8dp"
+				android:animateLayoutChanges="true" android:layout_marginTop="12dp">
+			<ImageView
+					android:id="@+id/placeholder_image"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:contentDescription="@string/not_started_icon"
+					app:srcCompat="@drawable/ic_music_note_pink_72dp" />
+			<TextView
+					android:id="@+id/placeholder_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:layout_marginEnd="8dp"
+					android:layout_gravity="center"
+					android:padding="16dp"
+					android:text="@string/start_search"
+					android:textColor="@color/colorGrey800"
+					android:textSize="20sp"
+					android:gravity="center"
+					app:fontFamily="sans-serif" />
+			
+			<android.support.design.widget.TextInputLayout
+					android:id="@+id/placeholder_search_input_layout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+				<android.support.design.widget.TextInputEditText
+						android:id="@+id/placeholder_search_input_box"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:inputType="text"
+						android:ems="10"
+						android:hint="@string/search_hint" />
+			
+			</android.support.design.widget.TextInputLayout>
+			
+			<android.support.v7.widget.AppCompatButton
+					android:id="@+id/placeholder_search_button"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/lets_start"
+					android:layout_marginTop="24dp"
+					android:padding="4dp"
+					style="@style/AppBaseTheme.Button" />
+		</LinearLayout>
+	
+	</android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

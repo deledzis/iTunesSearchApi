@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">AlbumsLib</string>
+	<string name="toolbar_title">Аудио-библиотека</string>
+	<string name="menu_search_album">Искать альбом</string>
+	<string name="search_hint">Какой альбом Вы ищете?</string>
+	<string name="start_search">Поиск в iTunes абсолютно любого альбома!</string>
+	<string name="see_on_site">Найти в iTunes</string>
+	<string name="lets_start">Найти</string>
+	<string name="try_again">Ещё раз</string>
+	<string name="unexpected_error">Неизвестная ошибка. Попробуйте позже.</string>
+	<string name="search_query_empty">Поле не должно быть пустым.</string>
+	<string name="nothing_found">Похоже, ничего не найдено. Уточните запрос и попробуйте снова</string>
+	<string name="no_available_internet_connection">Пожалуйста, проверьте ваше интернет соединение</string>
+	<string name="list_of_tracks">Список песен</string>
+	<string name="album_detailed_artist">Автор: %1$s</string>
+	<string name="album_detailed_year">Год: %1$d</string>
+	<string name="album_detailed_price">Цена: %1$d %2$s</string>
+	<string name="album_detailed_genre">Стиль: %1$s</string>
+	<string name="album_detailed_tracks_count">Количество песен: %1$d</string>
+	<string name="albums_adapter_tracks_count">%1$d песен</string>
+</resources>

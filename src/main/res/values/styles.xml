@@ -1,0 +1,13 @@
+<resources>
+	<style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorWhite</item>
+		<item name="colorPrimaryDark">@color/colorPink</item>
+		<item name="colorAccent">@color/colorBlue800</item>
+	</style>
+	
+	<style name="AppBaseTheme.Button" parent="Widget.AppCompat.Button.Colored">
+		<item name="android:background">@drawable/accent_button_rounded_corners</item>
+		<item name="colorButtonNormal">@color/colorBlue800</item>
+		<item name="android:textColor">@color/colorWhite</item>
+	</style>
+</resources>
